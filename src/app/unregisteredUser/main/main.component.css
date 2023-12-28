@@ -1,0 +1,111 @@
+.video-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.container {
+
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.textContainer {
+  text-align: center;
+  max-width: 34rem;
+  margin: auto;
+  padding-top: 30rem;
+  height: 150%;
+}
+
+.title {
+  position: fixed;
+  top: 40%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  font-size: 6rem; 
+  z-index: 2; 
+}
+
+.text {
+  font-size: 1rem; 
+
+
+}
+
+.logoImg {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  width: 70px;
+  height: au;
+  z-index: 1;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+.startButton {
+  
+  margin-top: 1rem;
+  padding: 0.3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 0.5rem;
+}
+
+.loginButton {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  border: none;
+}
+
+
+
+
+
+.logoImg,
+.iniciarSesionButton,
+.textContainer,
+.googlePlayAdvice {
+  
+  z-index: 1;
+}
+
+.container {
+  height: 100vh;
+}
+
+.hypeSoundsText {
+  padding-top: 13rem;
+  font-size: small;
+}
+
+.googlePlayAdvice {
+  position: fixed;
+  right: -25rem;
+  bottom: 2rem;
+  
+}
+
+.googlePlayImg{
+  max-width: 20%;
+  border-radius: 0.5rem;
+}
+

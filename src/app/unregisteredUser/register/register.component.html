@@ -1,0 +1,42 @@
+<button class="backButton" type="button" [routerLink]="['../']" routerLinkActive="true">
+    <img class="back" src="/assets/login/backButton.webp">
+</button>
+
+
+<div class="container">
+
+    <div class="logoImg">
+        <img class=logo src="/assets/main/logo.webp" alt="logo">
+    </div>
+
+    <h2>Member register</h2>
+
+    <div class="input-container">
+
+        <input class="input-text" type="text" placeholder="UserName">
+        <br>
+
+        <input class="input-text" type="text" placeholder="Email">
+        <br>
+
+        <input class="input-text" [type]="showPassword ? 'text' : 'password'" placeholder="Password">
+        <br>
+
+        <div class="showPassword">
+            <button class="showPassword" type="button" (click)="toggleShowPassword()">
+                <img class="eye-logo" [src]="showPassword ? '/assets/login/eyeClosed.webp' : '/assets/login/eyePassword.webp'" alt="showPassword">
+            </button>
+        </div>
+
+        <input class="input-text" type="password" placeholder="Confirm">
+        <br><br>
+
+
+        <div class="registerDiv">
+            <button class="loginButton" type="button" style="background-color: white; color: black;">Enviar</button>
+        </div>
+
+
+    </div>
+
+</div>

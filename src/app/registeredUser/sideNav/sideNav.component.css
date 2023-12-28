@@ -1,0 +1,99 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*.classForbackground{
+    background-image: url('/assets/dashboard/spaceBackground.webp');
+    height: 100vh;
+}*/
+
+.container {
+    background-color: #333;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 18rem;
+    height: calc(100%);
+    opacity: 0.9;
+}
+
+img {
+    border-radius: 0.5rem;
+    opacity: 1;
+}
+
+.title {
+    padding: 1rem 0.5rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sideNav {
+    background-color: #333;
+    padding-right: 10px;
+
+}
+
+button {
+    background-color: #555;
+    color: white;
+    border: none;
+
+    width: calc(100% - -1.3rem);
+    padding: 8px;
+
+    cursor: pointer;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    padding-right: 1rem;
+    border-radius: 0.5rem;
+    
+}
+
+button:hover {
+    background-color: #777;
+}
+
+.active {
+    background-color: #999;
+}
+
+.userData {
+    display: flex;
+    margin-bottom: 1.4rem;
+}
+
+.userDetails {
+    margin-left: 10px;
+}
+
+.userName {
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.icon {
+    height: 5%;
+    padding-right: 1rem;
+    
+}
+
+.hypeSoundsText {
+    padding-top: 10px;
+}
+
+.hypeSoundsText > * {
+    margin-bottom: 1px;
+}
+
+
+
