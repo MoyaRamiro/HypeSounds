@@ -1,0 +1,36 @@
+<div class="container">
+
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="/assets/main/background.webm" type="video/webm">
+            Tu navegador no soporta el tag de video.
+        </video>
+    </div>
+
+    <div class="logoImg">
+        <img class=logo src="/assets/main/logo.webp" alt="logo">
+    </div>
+
+    <div class="iniciarSesionButton">
+        <button type="button" (click)="userLogged ? logout() : login()" routerLinkActive="active" class="loginButton" style="background-color: black; color: white;" >{{userLogged ? 'Cerrar Sesión' : 'Iniciar Sesión'}}</button>
+    </div>
+
+    <div class="textContainer">
+        <h1 class="title">Make a Difference, Create a Legacy</h1>
+        <p class="text">¿Te imaginas tener un lugar donde puedas monetizar tu música sin necesidad de
+            preocuparte en detalles como el marketing, la protección de derechos o incluso
+            firmar con una disquera para encontrar Financiamiento ? Únete a nuestro equipo,
+            envíanos tu talento y nosotros nos encargamos del resto.</p>
+
+        
+        <button class="startButton" type="button" [routerLink]="['/start']" routerLinkActive="active" style="background-color: white; color: black; font-weight: bold;">Start</button>
+        
+        <p class="hypeSoundsText">
+            © 2023 Hype Sounds. All rights reserved
+        </p>
+    </div>
+
+    <div class="googlePlayAdvice">
+        <img class=googlePlayImg src="/assets/main/googlePlayImage.webp" alt="Google Play Advice">
+    </div>
+</div>

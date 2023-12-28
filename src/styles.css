@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import url(https://db.onlinewebfonts.com/c/76d326da1e474bdd1ae379dc21fde25c?family=HK+Grotesk+SemiBold);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'HK Grotesk SemiBold', sans-serif;
+    color: white;
+}

@@ -1,0 +1,92 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    position: relative;
+}
+
+.showPassword {
+    position: absolute;
+    border: none;
+    background: none;
+    padding: 0;
+    right: 0.5rem;
+    bottom: 6.3rem;
+}
+
+.eye-logo {
+    width: 20px;
+    height: 20px;
+}
+
+.back{
+    width: 100%;
+    height: 100%;
+}
+
+.backButton {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    width: 5rem;
+    height: auto;
+}
+
+
+.input-text {
+    padding: 0.1rem;
+    padding-left: 32px;
+    font-weight: bold;
+    margin: 0.2rem;
+    border-radius: 0.5rem;
+    padding-right: 5rem;
+}
+
+.logo {
+    width: 10rem;
+    height: auto;
+    z-index: 1;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.input-logo-email,
+.input-logo-password {
+    position: absolute;
+    top: 12%;
+    left: 8px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: auto;
+}
+
+.input-logo-password {
+    top: 33%;
+}
+
+.loginButton, .registerButton{
+    font-weight: bold;
+}
+
+.forgotPasswordText,
+.loginDiv{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.register{
+    position: absolute;
+    bottom: -20rem;
+    text-align: center;
+    width: 100%;
+}

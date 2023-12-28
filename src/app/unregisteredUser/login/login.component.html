@@ -1,0 +1,40 @@
+
+<button class="backButton" type="button" [routerLink]="['../']" routerLinkActive="true">
+    <img class="back" src="/assets/login/backButton.webp">
+</button>
+
+
+<div class="container">
+
+    <div class="logoImg">
+        <img class=logo src="/assets/main/logo.webp" alt="logo">
+    </div>
+
+    <h2>Member Login</h2>
+
+    <div class="input-container">
+        <img class="input-logo-email" src="/assets/login/email-icon.webp" alt="Logo">
+        <input class="input-text" type="text" placeholder="Email">
+        <br>
+
+        <img class="input-logo-password" src="/assets/login/passwordLogo.webp" alt="Logo">
+        <input class="input-text" [type]="showPassword ? 'text' : 'password'" placeholder="Password">
+
+        <button class="showPassword" type="button" (click)="toggleShowPassword()">
+            <img class="eye-logo" [src]="showPassword ? '/assets/login/eyeClosed.webp' : '/assets/login/eyePassword.webp'" alt="showPassword">
+        </button>
+
+        <br><br>
+        
+        <a><p class="forgotPasswordText">¿Has olvidado tu contraseña?</p></a>
+        
+
+        <div class="loginDiv">
+            <button class="loginButton" type="button" style="background-color: white; color: black;" (click)="submitLogin()">Iniciar Sesion</button>
+        </div>
+
+        <a class="register" [routerLink]="['/register']"><b>Crea tu cuenta.</b></a>
+        
+    </div>
+
+</div>

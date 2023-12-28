@@ -1,0 +1,15 @@
+.body {
+    height: 100vh;
+    position: relative;
+    top: 0;
+    z-index: 0;
+    background-image: url('/assets/dashboard/spaceBackground.webp');
+    background-attachment: scroll;
+    pointer-events: none;
+  }
+
+.body-content {
+    pointer-events: auto;
+    z-index: 1;
+  }
+  

@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="image-slider">
+      <button class='arrowLeft' (click)="showPreviousImage()">
+        <img style="transform: rotate(180deg);" class="imageArrow" src="/assets/feed/arrowLogo.webp" alt="Imagen actual" />
+      </button>
+
+      <img class="image" [src]="currentImage" alt="Imagen actual"/>
+
+      <button class='arrowRight' (click)="showNextImage()">
+        <img class="imageArrow" src="/assets/feed/arrowLogo.webp" alt="Imagen actual" />
+      </button>
+    </div>
+
+    <div class="options">
+        <button type="button" class="optionButton">Mi Perfil</button>
+        <button type="button" class="optionButton">Mis mp3</button>
+        <button type="button" class="optionButton">Mis compras</button>
+    </div>
+
+    <div class="placements">
+        <h3>Placements</h3>
+
+        
+    </div>
+
+  </div>

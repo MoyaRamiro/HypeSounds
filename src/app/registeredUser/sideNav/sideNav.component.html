@@ -1,0 +1,59 @@
+<div class="classForbackground">
+
+  <div class="container">
+    <h2 class="title">HypeSounds©</h2>
+
+    <div class="userData" *ngIf="getUserInfo() | async as user">
+        <img *ngIf="user.picture" [src]="user.picture" alt="User Avatar">
+        <div class="userDetails">
+            <p class="userName">{{user.name}}</p>
+            <p>{{user.email}}</p>
+        </div>
+        
+    </div>
+
+    
+
+    <div class="sideNav">
+        <h6>MAIN</h6>
+
+        <button (click)="changeSection('feed')" [ngClass]="{'active': currentSection === 'feed'}">Feed</button>
+        <br>
+        <button (click)="changeSection('placements')" [ngClass]="{'active': currentSection === 'placements'}">Placements</button>
+        <br>
+        <button (click)="changeSection('servicios')" [ngClass]="{'active': currentSection === 'servicios'}">Servicios</button>
+
+        <h6>PROFILE</h6>
+
+        <button (click)="changeSection('profile')" [ngClass]="{'active': currentSection === 'profile'}">Profile</button>
+        <br>
+        <button (click)="changeSection('mis_mp3')" [ngClass]="{'active': currentSection === 'mis_mp3'}">Mis mp3</button>
+        <br>
+        <button (click)="changeSection('mis_compras')" [ngClass]="{'active': currentSection === 'mis_compras'}">Mis compras</button>
+        <br>
+        <button (click)="changeSection('historial')" [ngClass]="{'active': currentSection === 'historial'}">Historial</button>
+
+        <h6>MAS...</h6>
+
+        <button (click)="changeSection('resources')" [ngClass]="{'active': currentSection === 'resources'}">Resources</button>
+        <br>
+        <button (click)="changeSection('configuracion')" [ngClass]="{'active': currentSection === 'configuracion'}">Configuracion</button>
+        <br>
+        <button (click)="changeSection('support')" [ngClass]="{'active': currentSection === 'support'}">Support</button>
+        <br>
+        <button (click)="changeSection('logout')" [ngClass]="{'active': currentSection === 'logout'}">Cerrar Sesión</button>
+      </div>
+
+      <img class="icon" src="assets/dashboard/youtubeLogo.webp" alt="youtube">
+      <img class="icon" src="assets/dashboard/instagramLogo.webp" alt="instagram">
+      <img class="icon" src="assets/dashboard/discordLogo.webp" alt="discord">
+      <img class="icon" src="assets/dashboard/beatstarsLogo.webp" alt="beatStars">
+
+      <div class="hypeSoundsText">
+        <p>© 2023 Hype Sounds.</p>
+        <p>All rights reserved.</p>
+      </div>
+      
+</div>
+
+</div>

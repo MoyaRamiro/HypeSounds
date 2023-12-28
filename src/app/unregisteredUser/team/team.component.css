@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+
+.logo {
+    width: 10rem;
+    height: auto;
+    z-index: 1;
+}
+
+.text {
+    max-width: 33rem;
+}
+
+.sendButton{
+    margin-top: 1rem;
+    padding: 0.3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 0.5rem;
+}
+
+.arrowContainer{
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.arrows{
+    width: 2rem;
+    height: auto;
+}
+
+.arrowButton {
+    border: none;
+    background: none;
+    padding: 0;
+}

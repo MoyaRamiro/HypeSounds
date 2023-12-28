@@ -1,0 +1,68 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    margin-left: 17.5rem;
+    padding: 2rem;
+    height: calc(100%);
+
+}
+
+.image{
+    position: absolute;
+    width: 90rem;
+    height: 25rem;
+    z-index: -1;
+}
+
+.arrow {
+    background: none;
+
+}
+
+.imageArrow {
+    height: 100%;
+    width: 3rem;
+}
+
+.arrowLeft {
+    position: absolute;
+    margin: 0;
+    top:12.5rem;
+    left: calc(100% - 150rem);
+    background: none;
+    border: none;
+    z-index: 1;
+    height: auto;
+    width: 100%;
+}
+
+.arrowRight{
+    position: absolute;
+    top: 12.5rem;
+    right: calc(100% - 100rem);
+    background: none;
+    border: none;
+    z-index: 1;
+    height: auto;
+}
+
+.options {
+    position: absolute;
+    top: 27.5rem;
+}
+
+.optionButton{
+    background-color: grey;
+    padding: 2.5rem 13rem;
+    margin: 5px;
+}
+
+.placements {
+    margin-top: 35rem;
+}
+
