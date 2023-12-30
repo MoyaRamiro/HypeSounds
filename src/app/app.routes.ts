@@ -9,6 +9,15 @@ import { PartnersComponent } from './unregisteredUser/partners/partners.componen
 import { CharacteristicsComponent } from './unregisteredUser/characteristics/characteristics.component';
 import { FeedComponent } from './registeredUser/feed/feed.component';
 import { BodyComponent } from './registeredUser/body/body.component';
+import { PlacementsComponent } from './registeredUser/placements/placements.component';
+import { ServiciosComponent } from './registeredUser/servicios/servicios.component';
+import { ProfileComponent } from './registeredUser/profile/profile.component';
+import { TrackLibraryComponent } from './registeredUser/track-library/track-library.component';
+import { PurchasesComponent } from './registeredUser/purchases/purchases.component';
+import { HistoryComponent } from './registeredUser/history/history.component';
+import { ResourcesComponent } from './registeredUser/resources/resources.component';
+import { ConfigurationComponent } from './registeredUser/configuration/configuration.component';
+import { SupportComponent } from './registeredUser/support/support.component';
 
 
 export const routes: Routes = [
@@ -19,5 +28,14 @@ export const routes: Routes = [
     { path: 'team', component: TeamComponent },
     { path: 'partners', component: PartnersComponent},
     { path: 'characteristics', component: CharacteristicsComponent},
-    { path: 'feed', component: FeedComponent}
+    { path: 'feed', component: FeedComponent},
+    { path: 'placements', component: PlacementsComponent},
+    { path: 'services', component: ServiciosComponent},
+    { path: 'profile', component: ProfileComponent},
+    { path: 'trackLibrary', component: TrackLibraryComponent},
+    { path: 'purchases', component: PurchasesComponent},
+    { path: 'history', component: HistoryComponent},
+    { path: 'resources', component: ResourcesComponent},
+    { path: 'configuration', component: ConfigurationComponent},
+    { path: 'support', component: SupportComponent}
 ];

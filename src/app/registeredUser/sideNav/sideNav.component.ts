@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { AuthService } from '@auth0/auth0-angular';
 
 @Component({
   selector: 'app-sideNav',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './sideNav.component.html',
   styleUrl: './sideNav.component.css'
 })
@@ -27,5 +28,9 @@ export class sideNavComponent {
 
   isButtonActive(button: string): boolean {
     return this.activeButton === button;
+  }
+
+  logout(){
+    this.auth.logout();
   }
 }

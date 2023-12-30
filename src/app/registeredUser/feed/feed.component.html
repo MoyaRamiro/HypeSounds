@@ -1,26 +1,104 @@
+<app-sideNav></app-sideNav>
+
 <div class="container">
-    <div class="image-slider">
-      <button class='arrowLeft' (click)="showPreviousImage()">
-        <img style="transform: rotate(180deg);" class="imageArrow" src="/assets/feed/arrowLogo.webp" alt="Imagen actual" />
-      </button>
+  <div class="image-slider">
+    <button class='arrowLeft' (click)="showPreviousImage()">
+      <img style="transform: rotate(180deg);" class="imageArrow" src="/assets/feed/arrowLogo.webp"
+        alt="Imagen actual" />
+    </button>
 
-      <img class="image" [src]="currentImage" alt="Imagen actual"/>
+    <img class="image" [src]="currentImage" alt="Imagen actual" />
 
-      <button class='arrowRight' (click)="showNextImage()">
-        <img class="imageArrow" src="/assets/feed/arrowLogo.webp" alt="Imagen actual" />
-      </button>
+    <button class='arrowRight' (click)="showNextImage()">
+      <img class="imageArrow" src="/assets/feed/arrowLogo.webp" alt="Imagen actual" />
+    </button>
+  </div>
+
+  <div class="options">
+    <button type="button" class="optionButton">Mi Perfil</button>
+    <button type="button" class="optionButton">Mis mp3</button>
+    <button type="button" class="optionButton">Mis compras</button>
+  </div>
+
+  <div class="placements">
+    <h3>Placements</h3>
+
+    <div class="description">
+      <p>Descripcion de lo que es un placement....</p>
+
+      <div class="navigate">
+        <p class="navigate-element">⬅️</p>
+        <p class="navigate-element">➡️</p>
+        <p class="navigate-element">Ver Todos</p>
+      </div>
+
     </div>
 
-    <div class="options">
-        <button type="button" class="optionButton">Mi Perfil</button>
-        <button type="button" class="optionButton">Mis mp3</button>
-        <button type="button" class="optionButton">Mis compras</button>
+
+    <li class="placements-data" *ngFor="let data of placements">
+      <div class="placementContainer">
+
+        <img class="placementImage" [src]="[data.srcPhoto]" alt="placementImage">
+        <div class="placement-info">
+          <p class="typeOfPlacement">{{data.placementsType}}</p>
+          <h5 class="nameOfPlacement">{{data.placementName}}</h5>
+          <h6 class="discography">{{data.discography}}</h6>
+          <p class="timeLeft">{{data.timeLeft}}</p>
+        </div>
+
+      </div>
+
+    </li>
+  </div>
+
+
+  <div class="soundPacks">
+    <h3>SoundPacks, Drumkits, etc.</h3>
+
+    <div class="description">
+      <p>Descripcion.....</p>
+
+      <div class="navigate">
+        <p class="navigate-element">⬅️</p>
+        <p class="navigate-element">➡️</p>
+        <p class="navigate-element">Ver Todos</p>
+      </div>
     </div>
+    
 
-    <div class="placements">
-        <h3>Placements</h3>
-
+    <li class="soundPacksData" *ngFor="let data of soundPacks">
+      
+      <div class="soundPackCointainer">
+        <img [src]="[data.srcPhoto]" alt="soundPackImage" class="soundPackImage">
+        <div class="soundPack-info">
+          <h6>{{data.name}}</h6>
+          <button type='button' class="downloadButton">Download</button>
+        </div>
         
-    </div>
+      </div>
+    </li>
 
   </div>
+
+
+  <div class="servicios">
+    <h3>Servicios</h3>
+
+    <p>Podras contar con cursos en diversas areas de la produccion o cualquier otra forma de contacto con la escena musical...</p>
+
+    <li class="services-data" *ngFor="let data of services">
+
+      <div class="serviceContainer">
+        <img [src]="[data.srcPhoto]" alt="imageService" class="services-image">
+
+        <div class="serviceInfo">
+          <h6 class="serviceName">{{data.name}}</h6>
+          <p class="serviceDescription">{{data.description}}</p>
+        </div>
+        
+        <button type="button" class="buyButton">Comprar</button>
+      </div>
+    </li>
+  </div>
+
+</div>
