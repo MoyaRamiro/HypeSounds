@@ -64,5 +64,126 @@ html, body {
 
 .placements {
     margin-top: 35rem;
+    margin-bottom: 2rem;
 }
 
+.placements-data{
+    display: inline-block;
+}
+
+.placementContainer{
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+    background-color: black;
+}
+
+.placementImage{
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.placement-info{
+    padding-left: 1rem;
+}
+
+.typeOfPlacement{
+    padding-top: 0.5rem;
+}
+
+.timeLeft{
+    text-align: center;   
+}
+
+.description{
+    display: flex;
+}
+
+.navigate {
+    display: flex;
+    position: absolute;
+    right: 3rem;
+}
+
+.navigate-element{
+    margin: 0.5rem;
+}
+
+.soundPacksData{
+    display: inline-block;
+}
+
+.soundPackCointainer{
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.soundPackImage{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.soundPack-info{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.downloadButton{
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: rgb(25, 151, 109);
+    color: black;
+    border-radius: 0.5rem;
+}
+
+.servicios{
+    margin-top: 2rem;
+}
+
+.services-data{
+    display: inline-block;
+}
+
+.serviceContainer{
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.services-image{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.serviceInfo{
+    text-align: left;
+    width: 20rem;
+    margin: 1rem;
+}
+
+.serviceName{
+    margin-bottom: 1.5rem;
+}
+
+.serviceDescription{
+    font-size: small;
+}
+
+.buyButton {
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    background-color: rgb(25, 151, 109);
+    color: black;
+    border-radius: 0.5rem;
+}

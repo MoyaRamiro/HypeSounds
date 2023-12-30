@@ -17,31 +17,31 @@
     <div class="sideNav">
         <h6>MAIN</h6>
 
-        <button (click)="changeSection('feed')" [ngClass]="{'active': currentSection === 'feed'}">Feed</button>
+        <button [routerLink]="['/feed']" (click)="changeSection('feed')" [ngClass]="{'active': currentSection === 'feed'}">Feed</button>
         <br>
-        <button (click)="changeSection('placements')" [ngClass]="{'active': currentSection === 'placements'}">Placements</button>
+        <button [routerLink]="['/placements']" (click)="changeSection('placements')" [ngClass]="{'active': currentSection === 'placements'}">Placements</button>
         <br>
-        <button (click)="changeSection('servicios')" [ngClass]="{'active': currentSection === 'servicios'}">Servicios</button>
+        <button [routerLink]="['/services']" (click)="changeSection('servicios')" [ngClass]="{'active': currentSection === 'servicios'}">Servicios</button>
 
         <h6>PROFILE</h6>
 
-        <button (click)="changeSection('profile')" [ngClass]="{'active': currentSection === 'profile'}">Profile</button>
+        <button [routerLink]="['/profile']" (click)="changeSection('profile')" [ngClass]="{'active': currentSection === 'profile'}">Profile</button>
         <br>
-        <button (click)="changeSection('mis_mp3')" [ngClass]="{'active': currentSection === 'mis_mp3'}">Mis mp3</button>
+        <button [routerLink]="['/trackLibrary']" (click)="changeSection('mis_mp3')" [ngClass]="{'active': currentSection === 'mis_mp3'}">Mis mp3</button>
         <br>
-        <button (click)="changeSection('mis_compras')" [ngClass]="{'active': currentSection === 'mis_compras'}">Mis compras</button>
+        <button [routerLink]="['/purchases']" (click)="changeSection('mis_compras')" [ngClass]="{'active': currentSection === 'mis_compras'}">Mis compras</button>
         <br>
-        <button (click)="changeSection('historial')" [ngClass]="{'active': currentSection === 'historial'}">Historial</button>
+        <button [routerLink]="['/history']" (click)="changeSection('historial')" [ngClass]="{'active': currentSection === 'historial'}">Historial</button>
 
         <h6>MAS...</h6>
 
-        <button (click)="changeSection('resources')" [ngClass]="{'active': currentSection === 'resources'}">Resources</button>
+        <button [routerLink]="['/resources']" (click)="changeSection('resources')" [ngClass]="{'active': currentSection === 'resources'}">Resources</button>
         <br>
-        <button (click)="changeSection('configuracion')" [ngClass]="{'active': currentSection === 'configuracion'}">Configuracion</button>
+        <button [routerLink]="['/configuration']" (click)="changeSection('configuracion')" [ngClass]="{'active': currentSection === 'configuracion'}">Configuracion</button>
         <br>
-        <button (click)="changeSection('support')" [ngClass]="{'active': currentSection === 'support'}">Support</button>
+        <button [routerLink]="['/support']" (click)="changeSection('support')" [ngClass]="{'active': currentSection === 'support'}">Support</button>
         <br>
-        <button (click)="changeSection('logout')" [ngClass]="{'active': currentSection === 'logout'}">Cerrar Sesión</button>
+        <button (click)="logout()" [ngClass]="{'active': currentSection === 'logout'}">Cerrar Sesión</button>
       </div>
 
       <img class="icon" src="assets/dashboard/youtubeLogo.webp" alt="youtube">
