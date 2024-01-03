@@ -4,7 +4,7 @@ import { OnInit } from '@angular/core';
 import { placementsData } from '../placements/placements-data';
 import { CommonModule } from '@angular/common';
 import { soundPacksData } from '../sound-packs/soundPacks-data';
-import { servicesData } from '../servicios/services-data';
+import { servicesData } from '../market-place/services-data';
 
 @Component({
   selector: 'app-feed',

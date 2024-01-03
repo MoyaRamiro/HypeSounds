@@ -1,3 +1,31 @@
 <app-sideNav></app-sideNav>
 
-<p>profile works!</p>
+<div class="upContainer">
+    <div class="userData" *ngIf="getUserInfo() | async as user">
+        <img class="userPicture" *ngIf="user.picture" [src]="user.picture" alt="User Avatar">
+        <button class="editProfile">Edit Profile</button>
+    </div>
+</div>
+
+<div class="downContainer">
+    
+    <div class="profile">
+        <div class="userDetails" *ngIf="getUserInfo() | async as user">
+            <p class="userName" style="font-weight: bold;">{{user.name}}</p>
+            <p>Descripcion...</p>
+            <p>{{user.email}}</p>
+        </div>
+
+        <div class="socialMedia">
+            <h5>Social Media</h5>
+            <img class="icon" src="assets/dashboard/youtubeLogo.webp" alt="youtube">
+            <img class="icon" src="assets/dashboard/instagramLogo.webp" alt="instagram">
+            <img class="icon" src="assets/dashboard/beatstarsLogo.webp" alt="beatStars">
+        </div>
+
+    </div>
+    
+
+        
+    
+</div>

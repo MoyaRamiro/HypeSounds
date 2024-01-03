@@ -10,7 +10,6 @@ import { CharacteristicsComponent } from './unregisteredUser/characteristics/cha
 import { FeedComponent } from './registeredUser/feed/feed.component';
 import { BodyComponent } from './registeredUser/body/body.component';
 import { PlacementsComponent } from './registeredUser/placements/placements.component';
-import { ServiciosComponent } from './registeredUser/servicios/servicios.component';
 import { ProfileComponent } from './registeredUser/profile/profile.component';
 import { TrackLibraryComponent } from './registeredUser/track-library/track-library.component';
 import { PurchasesComponent } from './registeredUser/purchases/purchases.component';
@@ -18,10 +17,11 @@ import { HistoryComponent } from './registeredUser/history/history.component';
 import { ResourcesComponent } from './registeredUser/resources/resources.component';
 import { ConfigurationComponent } from './registeredUser/configuration/configuration.component';
 import { SupportComponent } from './registeredUser/support/support.component';
+import { MarketPlaceComponent } from './registeredUser/market-place/market-place.component';
 
 
 export const routes: Routes = [
-    { path: '', component: BodyComponent },
+    { path: '', component: MainComponent },
     { path: 'login', component: LoginComponent },
     { path: 'start', component: StartComponent },
     { path: 'register', component: RegisterComponent },
@@ -30,7 +30,7 @@ export const routes: Routes = [
     { path: 'characteristics', component: CharacteristicsComponent},
     { path: 'feed', component: FeedComponent},
     { path: 'placements', component: PlacementsComponent},
-    { path: 'services', component: ServiciosComponent},
+    { path: 'marketPlace', component: MarketPlaceComponent},
     { path: 'profile', component: ProfileComponent},
     { path: 'trackLibrary', component: TrackLibraryComponent},
     { path: 'purchases', component: PurchasesComponent},
