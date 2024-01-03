@@ -6,6 +6,7 @@
     background-image: url('/assets/dashboard/spaceBackground.webp');
     background-attachment: scroll;
     pointer-events: none;
+    margin: 0;
   }
 
 .body-content {

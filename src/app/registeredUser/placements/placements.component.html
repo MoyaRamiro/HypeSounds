@@ -1,3 +1,23 @@
 <app-sideNav></app-sideNav>
 
-<p>placements works!</p>
+<div class="placements">
+    <h3 class="title">Placements</h3>
+
+    
+
+
+    <li class="placements-data" *ngFor="let data of placements">
+      <div class="placementContainer">
+
+        <img class="placementImage" [src]="[data.srcPhoto]" alt="placementImage">
+        <div class="placement-info">
+          <p class="typeOfPlacement">{{data.placementsType}}</p>
+          <h5 class="nameOfPlacement">{{data.placementName}}</h5>
+          <h6 class="discography">{{data.discography}}</h6>
+          <p class="timeLeft">{{data.timeLeft}}</p>
+        </div>
+
+      </div>
+
+    </li>
+  </div>
