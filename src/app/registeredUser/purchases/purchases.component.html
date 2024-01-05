@@ -1,3 +1,19 @@
 <app-sideNav></app-sideNav>
 
-<p>purchases works!</p>
+<div class="container">
+    <div class="title">
+        <h2>Descargas</h2>
+        <p>Aqui se mostraran tus archivos mp3, cursos, drumkits que hayas descargado...</p>
+    </div>
+    
+
+        <div class="soundPackContainer">
+          <img [src]="[soundPacks[1].srcPhoto]" alt="soundPackImage" class="soundPackImage">
+          <div class="soundPack-info">
+            <h6>{{soundPacks[1].name}}</h6>
+            <button type='button' class="downloadButton">Download</button>
+          </div>
+          
+        </div>
+
+</div>

@@ -1,74 +1,71 @@
-
 .container {
     position: absolute;
     left: 17.25rem;
-
-
 }
 
-.title{
+.title {
     margin-top: 3rem;
 }
 
-.info{
+.info {
     width: 102rem;
     background-color: rgba(0, 0, 0, 0.603);
     text-align: center;
     padding: 2rem;
 }
 
-.searchTrack{
+.searchTrack {
     text-align: left;
     width: 25rem;
     padding: 0.5rem 5rem;
 }
 
-.order{
+.order {
     margin: 0.5rem;
     border: none;
     background: none;
     color: white;
 }
 
-.trackLibrary{
+.trackLibrary {
     min-width: 102rem;
 
     background-color: black;
     padding: 2rem;
-    height: 73.44vh; 
+    height: 73.44vh;
 }
 
-.option{
+.option {
     color: black;
 }
 
-.description{
+.description {
     display: flex;
 }
 
-.optionButton{
+.optionButton {
     margin-right: 1rem;
     padding: 0.5rem 0.75rem;
 }
 
-.option-Buttons{
+.option-Buttons {
     position: absolute;
     right: -15rem;
 }
 
-.titles{
+.titles {
     padding: 1rem;
     margin-right: 6rem;
-    
+
 }
 
-.listNames{
+.listNames {
     margin-top: 2rem;
     display: flex;
     border: 2px solid white;
 }
 
-.trackList{
+.trackList {
     border: 2px solid white;
     text-align: center;
     padding-top: 2rem;
