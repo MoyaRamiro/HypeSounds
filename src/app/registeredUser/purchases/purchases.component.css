@@ -1,0 +1,14 @@
+.title{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.soundPackContainer {
+    display: flex;
+}
+
+.soundPack-info{
+    text-align: center;
+    padding: 5rem 3rem;
+    background-color: black;
+}
