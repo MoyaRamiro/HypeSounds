@@ -1,7 +1,10 @@
-<div class="headerContainer">
-    <p>INICIO</p>
-    <p>TEAM</p>
-    <p>SOCIOS</p>
-    <p>CARACTERISTICAS</p>
-</div>
+<div class="container">
+    <button type="button" class="backbutton" [routerLink]="['']"> <img src="/assets/header/back.webp" alt="" class="backImage"> </button>
 
+    <div class="headerContainer">
+        <button type="button" class="headerButton" [routerLink]="['/start']"><p>INICIO</p></button>
+        <button type="button" class="headerButton" [routerLink]="['/team']"><p>TEAM</p></button>
+        <button type="button" class="headerButton" [routerLink]="['/partners']"><p>SOCIOS</p></button>
+        <button type="button" class="headerButton" [routerLink]="['/characteristics']"><p>CARACTERISTICAS</p></button>
+    </div>
+</div>

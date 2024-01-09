@@ -5,11 +5,12 @@ import { placementsData } from '../placements/placements-data';
 import { CommonModule } from '@angular/common';
 import { soundPacksData } from '../sound-packs/soundPacks-data';
 import { servicesData } from '../market-place/services-data';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-feed',
   standalone: true,
-  imports: [DashboardModule, CommonModule],
+  imports: [DashboardModule, CommonModule, RouterModule],
   templateUrl: './feed.component.html',
   styleUrl: './feed.component.css'
 })

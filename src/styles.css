@@ -10,5 +10,8 @@
 body {
     font-family: 'HK Grotesk SemiBold', sans-serif;
     color: white;
+    margin: 0;
+    padding: 0;
     background-image: url('/assets/dashboard/spaceBackground.webp');
+    
 }

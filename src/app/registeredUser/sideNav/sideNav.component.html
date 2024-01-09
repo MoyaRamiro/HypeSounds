@@ -17,27 +17,27 @@
     <div class="sideNav">
         <h6>MAIN</h6>
 
-        <button [routerLink]="['/feed']" (click)="changeSection('feed')" [ngClass]="{'active': currentSection === 'feed'}">Feed</button>
+        <button (click)="changeSection('feed')" [ngClass]="{'active': currentSection === 'feed'}">Feed</button>
         <br>
-        <button [routerLink]="['/placements']" (click)="changeSection('placements')" [ngClass]="{'active': currentSection === 'placements'}">Placements</button>
+        <button (click)="changeSection('placements')" [ngClass]="{'active': currentSection === 'placements'}">Placements</button>
         <br>
-        <button [routerLink]="['/marketPlace']" (click)="changeSection('marketPlace')" [ngClass]="{'active': currentSection === 'marketPlace'}">Market Place</button>
+        <button (click)="changeSection('marketPlace')" [ngClass]="{'active': currentSection === 'marketPlace'}">Market Place</button>
 
         <h6>PROFILE</h6>
 
-        <button [routerLink]="['/profile']" (click)="changeSection('profile')" [ngClass]="{'active': currentSection === 'profile'}">Profile</button>
+        <button (click)="changeSection('profile')" [ngClass]="{'active': currentSection === 'profile'}">Profile</button>
         <br>
-        <button [routerLink]="['/trackLibrary']" (click)="changeSection('mis_mp3')" [ngClass]="{'active': currentSection === 'mis_mp3'}">Mis mp3</button>
+        <button  (click)="changeSection('trackLibrary')" [ngClass]="{'active': currentSection === 'trackLibrary'}">Mis mp3</button>
         <br>
-        <button [routerLink]="['/purchases']" (click)="changeSection('mis_compras')" [ngClass]="{'active': currentSection === 'mis_compras'}">Mis compras</button>
+        <button (click)="changeSection('purchases')" [ngClass]="{'active': currentSection === 'purchases'}">Mis compras</button>
         <br>
-        <button [routerLink]="['/history']" (click)="changeSection('historial')" [ngClass]="{'active': currentSection === 'historial'}">Historial</button>
+        <button  (click)="changeSection('history')" [ngClass]="{'active': currentSection === 'history'}">Historial</button>
 
         <h6>MAS...</h6>
 
         <button [routerLink]="['/resources']" (click)="changeSection('resources')" [ngClass]="{'active': currentSection === 'resources'}">Resources</button>
         <br>
-        <button [routerLink]="['/configuration']" (click)="changeSection('configuracion')" [ngClass]="{'active': currentSection === 'configuracion'}">Configuracion</button>
+        <button [routerLink]="['/configuration']" (click)="changeSection('configuration')" [ngClass]="{'active': currentSection === 'configuration'}">Configuracion</button>
         <br>
         <button [routerLink]="['/support']" (click)="changeSection('support')" [ngClass]="{'active': currentSection === 'support'}">Support</button>
         <br>

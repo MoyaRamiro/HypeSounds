@@ -56,10 +56,17 @@ html, body {
     top: 27.5rem;
 }
 
+
 .optionButton{
-    background-color: grey;
+    background-color: rgba(0, 0, 0, 0.534);
+    border: none;
     padding: 2.5rem 13rem;
     margin: 5px;
+    color: white;
+}
+
+.textOption {
+    text-align: left;
 }
 
 .placements {

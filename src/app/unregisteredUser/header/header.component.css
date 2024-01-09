@@ -1,5 +1,6 @@
-.headerContainer{
-    
+.headerContainer{  
+    position:static;
+    transform: translate(50%, 0%);
     display: flex;
     justify-content: center;
     
@@ -7,4 +8,31 @@
 
 .headerContainer p{
     margin: 3rem;
+}
+
+img {
+    transform: rotate(180deg);
+    background: transparent;
+    height: auto;
+    width: 5rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.backbutton{
+    position: absolute;
+    left: 1rem;
+    background: none;
+    border: none;
+    
+}
+
+.container{
+    display: flex;
+}
+
+.headerButton{
+    background: none;
+    border: none;
+    color: white;
 }
