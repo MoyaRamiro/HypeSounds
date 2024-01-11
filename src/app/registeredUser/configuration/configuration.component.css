@@ -1,0 +1,19 @@
+.container {
+    text-align: center;
+    width: auto;
+    height: 100vh;
+    padding-right: 20rem;
+    background-color: rgba(0, 0, 0, 0.692);
+}
+
+.title, .subtitle{
+    margin: 3rem 2rem;
+}
+
+.titleContainer {
+    display: flex;
+    background-color: rgba(12, 4, 121, 0.671);
+    padding: 0;
+    width: 30rem;
+    height: 15rem;
+}
