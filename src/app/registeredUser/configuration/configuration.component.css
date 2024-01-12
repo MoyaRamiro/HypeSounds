@@ -1,4 +1,5 @@
 .container {
+    display: flex;
     text-align: center;
     width: auto;
     height: 100vh;
@@ -11,9 +12,17 @@
 }
 
 .titleContainer {
-    display: flex;
+    display: block;
     background-color: rgba(12, 4, 121, 0.671);
-    padding: 0;
-    width: 30rem;
+    padding: 0.1rem;
+    width: 15rem;
     height: 15rem;
+}
+
+.headerImage{
+    padding: 2rem;
+}
+
+.headerButton{
+    padding: 2rem;
 }
