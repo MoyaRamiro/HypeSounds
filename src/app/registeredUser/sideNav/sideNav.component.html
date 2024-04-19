@@ -1,4 +1,4 @@
-<div class="classForbackground">
+<nav class="classForbackground text-white">
 
   <div class="container">
     <h2 class="title">HypeSounds©</h2>
@@ -43,17 +43,20 @@
         <br>
         <button (click)="logout()" [ngClass]="{'active': currentSection === 'logout'}">Cerrar Sesión</button>
       </div>
+      <ul class="flex space-x-4">
+        <li><img class="h-12" src="assets/dashboard/youtubeLogo.webp" alt="youtube"></li>
+        <li><img class="h-12" src="assets/dashboard/instagramLogo.webp" alt="instagram"></li>
+        <li><img class="h-12" src="assets/dashboard/discordLogo.webp" alt="discord"></li>
+        <li><img class="h-12" src="assets/dashboard/beatstarsLogo.webp" alt="beatStars"></li>
+      </ul>
+      
+      
 
-      <img class="icon" src="assets/dashboard/youtubeLogo.webp" alt="youtube">
-      <img class="icon" src="assets/dashboard/instagramLogo.webp" alt="instagram">
-      <img class="icon" src="assets/dashboard/discordLogo.webp" alt="discord">
-      <img class="icon" src="assets/dashboard/beatstarsLogo.webp" alt="beatStars">
-
-      <div class="hypeSoundsText">
+      <div class="hypeSoundsText text-white">
         <p>© 2023 Hype Sounds.</p>
         <p>All rights reserved.</p>
       </div>
       
 </div>
 
-</div>
+</nav>

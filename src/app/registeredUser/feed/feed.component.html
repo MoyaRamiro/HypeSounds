@@ -1,13 +1,14 @@
-<app-sideNav></app-sideNav>
+<section class="bg-black text-white">
+  <app-sideNav></app-sideNav>
 
 <div class="container">
-  <div class="image-slider">
+  <div class="center">
     <button class='arrowLeft' (click)="showPreviousImage()">
       <img style="transform: rotate(180deg);" class="imageArrow" src="/assets/feed/arrowLogo.webp"
         alt="Imagen actual" />
     </button>
 
-    <img class="image" [src]="currentImage" alt="Imagen actual" />
+    <img class="image z-1 pb-5" [src]="currentImage" alt="Imagen actual" />
 
     <button class='arrowRight' (click)="showNextImage()">
       <img class="imageArrow" src="/assets/feed/arrowLogo.webp" alt="Imagen actual" />
@@ -15,7 +16,7 @@
   </div>
 
   <div class="options">
-    <button type="button" class="optionButton" [routerLink]="['/profile']"><p class="textOption">Mi Perfil</p></button>
+    <button type="button" class="optionButton" [routerLink]="['/profile']"><p class="textOption z-10">Mi Perfil</p></button>
     <button type="button" class="optionButton" [routerLink]="['/trackLibrary']"><p class="textOption">Mis mp3</p></button>
     <button type="button" class="optionButton" [routerLink]="['/purchases']"><p class="textOption">Mis compras</p></button>
   </div>
@@ -102,3 +103,4 @@
   </div>
 
 </div>
+</section>

@@ -1,29 +1,42 @@
-<app-header></app-header>
+<section class="min-h-screen bg-black flex flex-col justify-between">
+    <app-header></app-header>
 
-<div class="container">
-    
 
-    <h3>MONETIZAR TU MUSICA</h3>
-    <h3>NUNCA FUE TAN FACIL</h3>
-    <br>
-    <b>Una solución todo en uno para monetizar tu música</b><br>
-    <b>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>TEAM>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>></b>
-    <br><br>
+    <div class="container flex flex-col  flex-grow text-white">
 
-    <p class="text">Nuestra misión es ayudar a los creadores de música de todos los niveles a
-    crecer y comenzar a lograr sus objetivos a través de las herramientas y
-    oportunidades que te ofrecemos</p>
+        <div class="flex flex-wrap justify-between w-48">
+            <img class=logo src="/assets/main/logo.webp" alt="logo">
+        </div>
 
-    <button type="button" class="sendButton"><b>Enviar solicitud</b></button>
-    
-</div>
+        <h1>MONETIZAR TU MUSICA</h1>
+        <h1>NUNCA FUE TAN FACIL</h1>
+        <br>
+        <b>>>>>>>>>>>>>>>>>>>>>>>>>>>TEAM>>>>>>>>>>>>>>>>>>>>>>>>>></b>
+        <br>
 
-<div class="arrowContainer">
-    <button type="button" class="arrowButton" [routerLink]="['/partners']">
+        <b>Una solución todo en uno para monetizartu música</b>
+        <br>
 
-        <img class="arrows" src="/assets/arrows.webp" alt="arrow">
+        <p class="text">Nuestra misión es ayudar a los creadores de música de todos los niveles a
+            crecer y comenzar a lograr sus objetivos a través de las herramientas y
+            oportunidades que te ofrecemos</p>
 
-    </button>
+        <br>
+        <button type="button"
+            class="flex items-center justify-center my-3 py-3 px-10 w-56 h-10 bg-white text-black rounded"><b>Enviar
+                solicitud</b></button>
 
-    
-</div>
+    </div>
+
+
+
+    <div class="arrowContainer mb-4">
+        <button type="button" class="arrowButton" [routerLink]="['/partners']">
+
+            <img class="arrows" src="/assets/arrows.webp" alt="arrow">
+
+        </button>
+
+
+    </div>
+</section>

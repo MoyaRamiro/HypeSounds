@@ -1,17 +1,5 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import url(https://db.onlinewebfonts.com/c/76d326da1e474bdd1ae379dc21fde25c?family=HK+Grotesk+SemiBold);
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'HK Grotesk SemiBold', sans-serif;
-    color: white;
-    margin: 0;
-    padding: 0;
-    background-image: url('/assets/dashboard/spaceBackground.webp');
-    
-}
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';

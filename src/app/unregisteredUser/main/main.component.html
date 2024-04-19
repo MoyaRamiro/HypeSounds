@@ -1,36 +1,51 @@
-<div class="container">
+<div class="relative h-screen overflow-hidden  bg-black  text-white ">
+    
+    <video autoplay loop muted playsinline class="absolute h-screen w-screen z-0">
+        <source src="/assets/main/background.webm" type="video/webm">
+        Tu navegador no soporta el tag de video.
+    </video>
+    <div class="absolute h-screen w-screen px-5 py-2">
+        <nav class="">
+        <div class="flex flex-wrap justify-between items-center mx-auto">
+            <div class="flex flex-wrap justify-between w-24">
+                <img class=logo src="/assets/main/logo.webp" alt="logo">
+            </div>
+            <div class="iniciarSesionButton">
+                <button type="button" (click)="userLogged ? logout() : login()" routerLinkActive="active">
+                    {{userLogged ? 'Cerrar Sesión' : 'Iniciar Sesión'}}
+                </button>
+            </div>
+        </div>
+    </nav>
 
-    <div class="video-container">
-        <video autoplay loop muted playsinline>
-            <source src="/assets/main/background.webm" type="video/webm">
-            Tu navegador no soporta el tag de video.
-        </video>
+
+
+    <section class="max-w-3xl mx-auto mt-20">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+            <h1 class="mb-4 text-7xl font-extrabold tracking-tight">
+                Make a Difference, Create a Legacy
+            </h1>
+            <p class="mb-8 text-lg font-normal">
+                ¿Te imaginas tener un lugar donde puedas monetizar tu música sin necesidad de
+                preocuparte en detalles como el marketing, la protección de derechos o incluso
+                firmar con una disquera para encontrar Financiamiento ? Únete a nuestro equipo,
+                envíanos tu talento y nosotros nos encargamos del resto</p>
+            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+                <button type="button" [routerLink]="['/start']"
+                    class="text-black font-bold bg-white hover:bg-white focus:ring-4 focus:ring-white rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Start</button>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer class="fixed bottom-0 left-0 w-full px-5 py-4 shadow flex items-center justify-between">
+        <span>© 2023 Hype Sounds. All rights reserved</span>
+        <img class="flex flex-wrap items-center h-20 rounded-lg" src="/assets/main/googlePlayImage.webp"
+            alt="Google Play Advice" />
+    </footer>
     </div>
+    
 
-    <div class="logoImg">
-        <img class=logo src="/assets/main/logo.webp" alt="logo">
-    </div>
-
-    <div class="iniciarSesionButton">
-        <button type="button" (click)="userLogged ? logout() : login()" routerLinkActive="active" class="loginButton" style="background-color: black; color: white;" >{{userLogged ? 'Cerrar Sesión' : 'Iniciar Sesión'}}</button>
-    </div>
-
-    <div class="textContainer">
-        <h1 class="title">Make a Difference, Create a Legacy</h1>
-        <p class="text">¿Te imaginas tener un lugar donde puedas monetizar tu música sin necesidad de
-            preocuparte en detalles como el marketing, la protección de derechos o incluso
-            firmar con una disquera para encontrar Financiamiento ? Únete a nuestro equipo,
-            envíanos tu talento y nosotros nos encargamos del resto.</p>
-
-        
-        <button class="startButton" type="button" [routerLink]="['/start']" routerLinkActive="active" style="background-color: white; color: black; font-weight: bold;">Start</button>
-        
-        <p class="hypeSoundsText">
-            © 2023 Hype Sounds. All rights reserved
-        </p>
-    </div>
-
-    <div class="googlePlayAdvice">
-        <img class=googlePlayImg src="/assets/main/googlePlayImage.webp" alt="Google Play Advice">
-    </div>
+    
 </div>

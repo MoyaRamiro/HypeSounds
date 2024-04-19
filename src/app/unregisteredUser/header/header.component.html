@@ -1,10 +1,21 @@
-<div class="container">
-    <button type="button" class="backbutton" [routerLink]="['']"> <img src="/assets/header/back.webp" alt="" class="backImage"> </button>
 
-    <div class="headerContainer">
-        <button type="button" class="headerButton" [routerLink]="['/start']"><p>INICIO</p></button>
-        <button type="button" class="headerButton" [routerLink]="['/team']"><p>TEAM</p></button>
-        <button type="button" class="headerButton" [routerLink]="['/partners']"><p>SOCIOS</p></button>
-        <button type="button" class="headerButton" [routerLink]="['/characteristics']"><p>CARACTERISTICAS</p></button>
-    </div>
-</div>
+
+
+
+<nav class="bg-black text-white px-10">
+
+    <button type="button" class="backbutton" [routerLink]="['']"> <img src="/assets/header/back.webp" alt="" class="bg-black"> </button>
+
+
+		<div class="text-white grid gap-4 px-96 py-12">
+			<ul class="flex font-semibold justify-between">
+                <!-- Active Link = text-indigo-500
+                Inactive Link = hover:text-indigo-500 -->
+				<li class="md:px-4"><button type="button" class="headerButton" [routerLink]="['/start']"><p>INICIO</p></button></li>
+				<li class="md:px-4"><button type="button" class="headerButton" [routerLink]="['/team']"><p>TEAM</p></button></li>
+				<li class="md:px-4"><button type="button" class="headerButton" [routerLink]="['/partners']"><p>SOCIOS</p></button></li>
+				<li class="md:px-4"><button type="button" class="headerButton" [routerLink]="['/characteristics']"><p>CARACTERISTICAS</p></button></li>
+                
+			</ul>
+		</div>
+</nav>
