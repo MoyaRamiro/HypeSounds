@@ -7,13 +7,12 @@ html, body {
 }
 
 .container {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.7);
     position: fixed;
     left: 0;
     top: 0;
     width: 18rem;
     height: calc(100%);
-    opacity: 0.9;
 }
 
 img {
@@ -31,13 +30,13 @@ body {
 }
 
 .sideNav {
-    background-color: #333;
+
     padding-right: 10px;
 
 }
 
 button {
-    background-color: #333;
+
     color: white;
     border: none;
 
