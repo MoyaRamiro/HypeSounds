@@ -1,47 +1,57 @@
-<app-sideNav></app-sideNav>
-
-<div class="container">
-    <div class="soundPacks">
-        <h3>SoundPacks, Drumkits, etc.</h3>
-
-        <p>Descripcion.....</p>
+<section class="ml-72">
 
 
 
 
-        <li class="soundPacksData" *ngFor="let data of soundPacks">
+    <app-sideNav></app-sideNav>
 
-            <div class="soundPackCointainer">
-                <img [src]="[data.srcPhoto]" alt="soundPackImage" class="soundPackImage">
-                <div class="soundPack-info">
-                    <h6>{{data.name}}</h6>
-                    <button type='button' class="downloadButton">Download</button>
+
+
+    <div class="container">
+        <div class="soundPacks">
+            <h3>SoundPacks, Drumkits, etc.</h3>
+
+            <p>Descripcion.....</p>
+
+
+
+
+            <li class="soundPacksData" *ngFor="let data of soundPacks">
+
+                <div class="soundPackCointainer">
+                    <img [src]="[data.srcPhoto]" alt="soundPackImage" class="soundPackImage">
+                    <div class="soundPack-info">
+                        <h6>{{data.name}}</h6>
+                        <button type='button' class="downloadButton">Download</button>
+                    </div>
+
                 </div>
+            </li>
 
-            </div>
-        </li>
+        </div>
 
+
+        <div class="servicios">
+            <h3>Servicios</h3>
+
+            <p>Podras contar con cursos en diversas areas de la produccion o cualquier otra forma de contacto con la
+                escena
+                musical...</p>
+
+            <li class="services-data" *ngFor="let data of services">
+
+                <div class="serviceContainer">
+                    <img [src]="[data.srcPhoto]" alt="imageService" class="services-image">
+
+                    <div class="serviceInfo">
+                        <h6 class="serviceName">{{data.name}}</h6>
+                        <p class="serviceDescription">{{data.description}}</p>
+                    </div>
+
+                    <button type="button" class="buyButton">Comprar</button>
+                </div>
+            </li>
+        </div>
     </div>
 
-
-    <div class="servicios">
-        <h3>Servicios</h3>
-
-        <p>Podras contar con cursos en diversas areas de la produccion o cualquier otra forma de contacto con la escena
-            musical...</p>
-
-        <li class="services-data" *ngFor="let data of services">
-
-            <div class="serviceContainer">
-                <img [src]="[data.srcPhoto]" alt="imageService" class="services-image">
-
-                <div class="serviceInfo">
-                    <h6 class="serviceName">{{data.name}}</h6>
-                    <p class="serviceDescription">{{data.description}}</p>
-                </div>
-
-                <button type="button" class="buyButton">Comprar</button>
-            </div>
-        </li>
-    </div>
-</div>
+</section>

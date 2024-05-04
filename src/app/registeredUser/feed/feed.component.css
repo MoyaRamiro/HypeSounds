@@ -59,7 +59,7 @@ html, body {
 .placementContainer{
     margin-right: 1rem;
     padding-bottom: 1rem;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .placementImage{
@@ -101,7 +101,7 @@ html, body {
 .soundPackCointainer{
     margin-right: 1rem;
     padding-bottom: 1rem;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,7 +138,7 @@ html, body {
 .serviceContainer{
     margin-right: 1rem;
     padding-bottom: 1rem;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;

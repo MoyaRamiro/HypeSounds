@@ -1,23 +1,32 @@
-<app-sideNav></app-sideNav>
-
-<div class="placements">
-    <h3 class="title">Placements</h3>
-
-    
+<section class="">
 
 
-    <li class="placements-data" *ngFor="let data of placements">
-      <div class="placementContainer">
+  <app-sideNav></app-sideNav>
 
-        <img class="placementImage" [src]="[data.srcPhoto]" alt="placementImage">
-        <div class="placement-info">
-          <p class="typeOfPlacement">{{data.placementsType}}</p>
-          <h5 class="nameOfPlacement">{{data.placementName}}</h5>
-          <h6 class="discography">{{data.discography}}</h6>
-          <p class="timeLeft">{{data.timeLeft}}</p>
+  <div class="">
+
+
+    <h3 class="w-screen text-center pt-10 font-bold">Placements</h3>
+
+
+
+
+
+    <ul class="text-left ml-72">
+      <li class="m-5 inline-block" *ngFor="let data of placements">
+        <div class="bg-black bg-opacity-15">
+
+          <img class="w-80 h-80 object-cover" [src]="[data.srcPhoto]" alt="placementImage">
+          <div class="p-1">
+            <p class="p-1 font-bold">{{data.placementsType}}</p>
+            <h5 class="p-1"> {{data.placementName}}</h5>
+            <h6 class="p-1"><span class="font-bold">Discography: </span>  {{data.discography}}</h6>
+            <p class="p-1"><span class="font-bold">Time left: </span> {{data.timeLeft}}</p>
+          </div>
+
         </div>
 
-      </div>
-
-    </li>
+      </li>
+    </ul>
   </div>
+</section>

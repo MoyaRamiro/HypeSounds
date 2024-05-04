@@ -1,95 +1,239 @@
-<app-sideNav></app-sideNav>
+<section class="ml-72">
 
-<div class="container">
-    <div class="info">
-        <h2 class="title">Track Library</h2>
-        <p>Aqui se encontraran tus mp3 subidos a la pagina!</p>
-        <input type="text" class="searchTrack" placeholder="Ingrese el nombre de su track...">
+    <app-sideNav></app-sideNav>
+
+    <div class="">
+        <div class="p-5 text-center  bg-black">
+            <h2 class="font-bold text-3xl">Track Library</h2>
+            <p class="p-3">Aqui se encontraran tus mp3 subidos a la pagina!</p>
+            <input type="text" class="py-2 px-20 text-black" placeholder="Ingrese el nombre de su track...">
+        </div>
+
+
+
+
+        <div class="p-5">
+
+            <h4 class="font-bold text-3xl">Tu libreria</h4>
+
+            <div class="">
+                <p class="text-xl">Navega a traves de los tracks subidos a la web</p>
+
+                <div class="absolute top-60 right-0">
+                    <button type="button" class="m-5 bg-black bg-opacity-50 p-4">Mostrar listados en Marketplace
+                    </button>
+                    <button type="button" class="m-5 bg-black bg-opacity-50 p-4">Subir un track</button>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="relative overflow-x-auto">
+
+
+
+
+
+
+                <table class="my-12 w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-900 uppercase dark:text-gray-400">
+                        <tr class="">
+                            <th scope="col" class="px-6 py-3">
+                                <button class="">Ordenar Por:</button>
+                                <select class="text-black mx-5">
+                                    <option class="">Nombre</option>
+                                    <option class="">Mas nuevos</option>
+                                    <option class="">Mas viejos</option>
+                                </select>
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                <button class="">Genero</button>
+                                <select class="text-black mx-5">
+                                    <option class=""></option>
+                                    <option class=""></option>
+                                    <option class=""></option>
+                                </select>
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                <button class="">Mood</button>
+                                <select class="text-black mx-5">
+                                    <option class=""></option>
+                                    <option class=""></option>
+                                    <option class=""></option>
+                                </select>
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                <button class="" type="checkbox" id="bpm">BPM: 0 a 500 </button>
+                                <select class="text-black mx-5"></select>
+
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+
+                                <button class="">Keys</button>
+                                <select class="text-black mx-5">
+                                    <option class=""></option>
+                                    <option class=""></option>
+                                    <option class=""></option>
+                                </select>
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                <button class="">Tipo</button>
+                                <select class="text-black mx-5">
+                                    <option class="">Beat</option>
+                                    <option class="">Loop</option>
+                                    <option class="">Cancion completa</option>
+                                    <option class="">Acappella</option>
+                                </select>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+
+
+
+
+
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <tbody class="bg-black bg-opacity-10 text-xs text-gray-900 uppercase dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                <h5 class="">Titulo del track</h5>
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                <h5 class="">Fecha en la que se publico</h5>
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                <h5 class="">Tipo</h5>
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                <h5 class="">Preview</h5>
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+
+                                <h5 class="">Detalles</h5>
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                <h5 class="">Configuracion</h5>
+                            </th>
+                        </tr>
+                    </tbody>
+
+
+                    <tfoot class="bg-black bg-opacity-50 dark:bg-gray-800">
+                        <tr>
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                TOUR BAR
+                            </th>
+                            <td class="px-6 py-4">
+                                29 mar 2024
+                            </td>
+                            <td class="px-6 py-4">
+                                RnB
+                            </td>
+                            <td class="px-6 py-4">
+                                <div role="status">
+                                    <svg aria-hidden="true"
+                                        class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+                                        viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                                            fill="currentFill" />
+                                    </svg>
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                MP3
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                ME QUIEREN MUERTO
+                            </th>
+                            <td class="px-6 py-4">
+                                3 abr 2024
+                            </td>
+                            <td class="px-6 py-4">
+                                TRAP
+                            </td>
+                            <td class="px-6 py-4">
+                                <div role="status">
+                                    <svg aria-hidden="true"
+                                        class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+                                        viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                                            fill="currentFill" />
+                                    </svg>
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                WAV
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                A OTRO NIVEL
+                            </th>
+                            <td class="px-6 py-4">
+                                26 abr 2024
+                            </td>
+                            <td class="px-6 py-4">
+                                Trap
+                            </td>
+                            <td class="px-6 py-4">
+                                <div role="status">
+                                    <svg aria-hidden="true"
+                                        class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+                                        viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                                            fill="currentFill" />
+                                    </svg>
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4">
+                                WAV
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
     </div>
 
-
-    <div class="trackLibrary">
-        
-        <h4 class="tracks">Tu libreria</h4>
-
-        <div class="description">
-            <p>Navega a traves de los tracks subidos a la web</p>
-
-            <div class="option-Buttons">
-                <button type="button" class="optionButton">Mostrar listados en Marketplace </button>
-                <button type="button" class="optionButton">Subir un track</button>
-            </div>
-            
-        </div>
-        
-
-        <div class="orderBy">
-            <button class="order">Ordenar Por:</button>
-            <select class="order">
-                <option class="option">Nombre</option>
-                <option class="option">Mas nuevos</option>
-                <option class="option">Mas viejos</option>
-            </select>
-
-            <button class="order">Genero</button>
-            <select class="order">
-                <option class="option"></option>
-                <option class="option"></option>
-                <option class="option"></option>
-            </select>
-
-            <button class="order">Mood</button>
-            <select class="order">
-                <option class="option"></option>
-                <option class="option"></option>
-                <option class="option"></option>
-            </select>
-
-
-
-
-            <button class="order" type="checkbox" id="bpm">BPM: 0 a 500 </button>
-            <select class="order"></select>
-
-
-
-            <button class="order">Keys</button>
-            <select class="order">
-                <option class="option"></option>
-                <option class="option"></option>
-                <option class="option"></option>
-            </select>
-
-            <button class="order">Tipo</button>
-            <select class="order">
-                <option class="option">Beat</option>
-                <option class="option">Loop</option>
-                <option class="option">Cancion completa</option>
-                <option class="option">Acappella</option>
-            </select>
-
-        </div>
-
-        <div class="trackContainer">
-
-            <div class="listNames">
-                <h5 class="titles">Titulo del track</h5>
-                <h5 class="titles">Fecha en la que se publico</h5>
-                <h5 class="titles">Tipo</h5>
-                <h5 class="titles">Preview</h5>
-                <h5 class="titles">Detalles</h5>
-                <h5 class="titles">Configuracion</h5>
-            </div>
-    
-            <div class="trackList">
-                <p>Por el momento no hay tracks subidos......</p>
-            </div>
-
-        </div>
-        
-        
-
-    </div>
-
-
-</div>
+</section>
