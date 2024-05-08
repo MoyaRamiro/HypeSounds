@@ -1,32 +1,83 @@
-<app-sideNav></app-sideNav>
+<section class="ml-80 mt-8">
 
-<div class="container">
-    <div class="title">
-        <h2>Historial</h2>
-        <p>Aqui se mostraran todos los tracks que hayan sido enviados a placements</p>
-    </div>
+    <app-sideNav></app-sideNav>
 
-    <div class="tracksContainer">
-        <h5 style="font-weight: bolder; font-size: xx-large;">Tu historial de tracks</h5>
-        <p>Vea todos sus aportes al portal de oportunidades</p>
-        
-        <div class="historyTracks">
-            <div class="tracks-titles">
-
-                <button type="button" class="nameButton"><h5 class="name">Fecha en la que se envió</h5></button>
-                <select></select>
-    
-                <button type="button" class="nameButton"><h5 class="name">Status</h5></button>
-                <select></select>
-            </div>
-
-            <div class="tracks">
-                <h6>Hasta el momento no hay aportes a los placements disponibles......</h6>
-            </div>
-            
+    <div class="">
+        <div class="text-center">
+            <h2 class="text-center text-3xl">Historial</h2>
+            <p>Aqui se mostraran todos los tracks que hayan sido enviados a placements</p>
         </div>
-        
+
+        <div class="tracksContainer">
+            <h5 style="font-weight: bolder; font-size: xx-large; margin-top: 3rem;">Tu historial de tracks</h5>
+            <p class="my-1 mb-5">Vea todos sus aportes al portal de oportunidades</p>
+
+
+
+
+
+            <div class="relative overflow-x-auto w-full">
+                <table class="w-full text-sm text-left rtl:text-right text-white dark:text-gray-400 ">
+                    <thead class=" bg-black border-b border-white">
+                        <tr>
+                            <th scope="col" class="w-1/2 px-6 py-3 ">
+                                <button type="button" class="nameButton">
+                                    <h5 class="mr-4">Fecha en la que se envió</h5>
+                                </button>
+                                <select></select>
+                            </th>
+                            <th scope="col" class="w-1/2 px-6 py-3 ">
+                                <button type="button" class="nameButton">
+                                    <h5 class="mr-4">Status  </h5>
+                                </button>
+                                <select></select>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="">
+                        <tr class="border-white bg-black">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+
+                            </th>
+                            <td class="px-6 py-4">
+
+                            </td>
+                        </tr>
+                        <tr class=" border-white bg-black">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <h6 class="text-right">Hasta el momento no hay aportes a los placements disponibles......</h6>
+                            </th>
+                            <td class="px-6 py-4">
+                                
+                            </td>
+                        </tr>
+                        <tr class="bg-black ">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+
+                            </th>
+                            <td class="px-6 py-4">
+                                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+            
+
+
+
+
+
+        </div>
+
+
     </div>
 
 
-</div>
+</section>
