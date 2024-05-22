@@ -58,21 +58,21 @@
 </div>
 
   <div class="options">
-    <button type="button" class="optionButton" [routerLink]="['/profile']"><p class="textOption z-10">Mi Perfil</p></button>
-    <button type="button" class="optionButton" [routerLink]="['/trackLibrary']"><p class="textOption">Mis mp3</p></button>
-    <button type="button" class="optionButton" [routerLink]="['/purchases']"><p class="textOption">Mis compras</p></button>
+    <button type="button" class="optionButton" [routerLink]="['/profile']"><p class="textOption z-10 font-bold">Mi Perfil</p></button>
+    <button type="button" class="optionButton" [routerLink]="['/trackLibrary']"><p class="textOption font-bold">Mis mp3</p></button>
+    <button type="button" class="optionButton" [routerLink]="['/purchases']"><p class="textOption font-bold">Mis compras</p></button>
   </div>
 
   <div class="placements">
-    <h3>Placements</h3>
+    <h3 class="text-xl">Placements</h3>
 
     <div class="description">
-      <p>Descripcion de lo que es un placement....</p>
+      <p  class="pb-3">Descripcion de lo que es un placement....</p>
 
       <div class="navigate">
         <p class="navigate-element">⬅️</p>
         <p class="navigate-element">➡️</p>
-        <p class="navigate-element">Ver Todos</p>
+        <button type="button" [routerLink]="['/placements']"><p class="showAll">Ver Todos</p></button>
       </div>
 
     </div>
@@ -96,15 +96,15 @@
 
 
   <div class="soundPacks">
-    <h3>SoundPacks, Drumkits, etc.</h3>
+    <h3 class="text-xl">SoundPacks, Drumkits, etc.</h3>
 
     <div class="description">
-      <p>Descripcion.....</p>
+      <p class="pb-3">Descripcion.....</p>
 
       <div class="navigate">
         <p class="navigate-element">⬅️</p>
         <p class="navigate-element">➡️</p>
-        <p class="navigate-element">Ver Todos</p>
+        <button type="button" [routerLink]="['/marketPlace']"><p class="showAll">Ver Todos</p></button>
       </div>
     </div>
     
@@ -125,9 +125,9 @@
 
 
   <div class="servicios">
-    <h3>Servicios</h3>
+    <h3 class="text-xl">Servicios</h3>
 
-    <p>Podras contar con cursos en diversas areas de la produccion o cualquier otra forma de contacto con la escena musical...</p>
+    <p class="pb-3">Podras contar con cursos en diversas areas de la produccion o cualquier otra forma de contacto con la escena musical...</p>
 
     <li class="services-data" *ngFor="let data of services">
 

@@ -37,5 +37,5 @@ export const routes: Routes = [
     { path: 'history', component: HistoryComponent},
     { path: 'resources', component: ResourcesComponent},
     { path: 'configuration', component: ConfigurationComponent},
-    { path: 'support', component: SupportComponent}
+    { path: 'support', component: SupportComponent},
 ];

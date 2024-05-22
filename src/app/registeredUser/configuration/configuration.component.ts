@@ -1,18 +1,20 @@
 import { Component } from '@angular/core';
 import { sideNavComponent } from '../sideNav/sideNav.component';
-import { AuthService } from '@auth0/auth0-angular';
+import { AuthService, User } from '@auth0/auth0-angular';
+import { UserService } from '../../services/user.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-configuration',
   standalone: true,
-  imports: [sideNavComponent],
+  imports: [sideNavComponent, CommonModule],
   templateUrl: './configuration.component.html',
   styleUrl: './configuration.component.css'
 })
 export class ConfigurationComponent {
-  constructor (private auth : AuthService) {}
-  
-  getUserInfo (){
-    this.auth.user$;
+  constructor (private user: UserService) {}
+
+  getUserInfo(){
+    return this.user.getUserInfo();
   }
 }

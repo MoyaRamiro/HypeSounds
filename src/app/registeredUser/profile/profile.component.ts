@@ -1,21 +1,22 @@
 import { Component } from '@angular/core';
 import { sideNavComponent } from '../sideNav/sideNav.component';
-import { AuthService } from '@auth0/auth0-angular';
 import { CommonModule } from '@angular/common';
+import { UserService } from '../../services/user.service';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
   standalone: true,
-  imports: [sideNavComponent, CommonModule],
+  imports: [sideNavComponent, CommonModule, RouterLink],
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.css'
 })
 export class ProfileComponent {
 
-  constructor (private auth : AuthService) {}
+  constructor (private user : UserService, private router : Router) {}
 
   getUserInfo() {
-    return this.auth.user$;
+    return this.user.getUserInfo();
   }
 
 }

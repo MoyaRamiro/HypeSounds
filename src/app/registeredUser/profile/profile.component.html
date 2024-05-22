@@ -3,12 +3,12 @@
 <div class="upContainer">
     <div class="userData" *ngIf="getUserInfo() | async as user">
         <img class="userPicture" *ngIf="user.picture" [src]="user.picture" alt="User Avatar">
-        <button class="editProfile">Edit Profile</button>
+        <button class="editProfile" [routerLink]="['/configuration']">Edit Profile</button>
     </div>
 </div>
 
 <div class="downContainer min-h-screen">
-    
+
     <div class="profile">
         <div class="userDetails" *ngIf="getUserInfo() | async as user">
             <p class="userName" style="font-weight: bold;">{{user.name}}</p>
@@ -24,8 +24,8 @@
         </div>
 
     </div>
-    
 
-        
-    
+
+
+
 </div>

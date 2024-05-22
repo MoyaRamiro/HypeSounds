@@ -42,6 +42,10 @@ html, body {
     color: white;
 }
 
+.optionButton:hover{
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
 .textOption {
     text-align: left;
 }
@@ -153,7 +157,7 @@ html, body {
 
 .serviceInfo{
     text-align: left;
-    width: 20rem;
+    width: 13rem;
     margin: 1rem;
 }
 
@@ -171,4 +175,12 @@ html, body {
     background-color: rgb(25, 151, 109);
     color: black;
     border-radius: 0.5rem;
+}
+
+.showAll{
+    padding-left: 0.5rem;
+}
+
+.showAll:hover{
+    text-decoration: underline;
 }

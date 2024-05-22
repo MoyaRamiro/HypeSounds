@@ -10,4 +10,6 @@ import {sideNavComponent } from './sideNav.component';
   ],
   exports: [sideNavComponent]
 })
-export class DashboardModule { }
+export class DashboardModule {
+
+ }

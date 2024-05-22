@@ -6,16 +6,17 @@
     <div class="userData" *ngIf="getUserInfo() | async as user">
         <img *ngIf="user.picture" [src]="user.picture" alt="User Avatar">
         <div class="userDetails">
-            <p class="userName">{{user.name}}</p>
-            <p>{{user.email}}</p>
+          <p class="userName">{{ user.name ? truncateText(user.name, 17) : '' }}</p>
+          <p>{{ user.email ? truncateText(user.email, 17) : '' }}</p>
         </div>
+        
         
     </div>
 
     
 
     <div class="sideNav">
-        <h6>MAIN</h6>
+        <h6 class="mb-2">MAIN</h6>
 
         <button (click)="changeSection('feed')" [ngClass]="{'active': currentSection === 'feed'}">Feed</button>
         <br>
@@ -23,7 +24,7 @@
         <br>
         <button (click)="changeSection('marketPlace')" [ngClass]="{'active': currentSection === 'marketPlace'}">Market Place</button>
 
-        <h6>PROFILE</h6>
+        <h6 class="mb-2">PROFILE</h6>
 
         <button (click)="changeSection('profile')" [ngClass]="{'active': currentSection === 'profile'}">Profile</button>
         <br>
@@ -33,7 +34,7 @@
         <br>
         <button  (click)="changeSection('history')" [ngClass]="{'active': currentSection === 'history'}">Historial</button>
 
-        <h6>MAS...</h6>
+        <h6 class="mb-2">MAS...</h6>
 
         <button [routerLink]="['/resources']" (click)="changeSection('resources')" [ngClass]="{'active': currentSection === 'resources'}">Resources</button>
         <br>

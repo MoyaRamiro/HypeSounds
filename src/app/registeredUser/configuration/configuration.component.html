@@ -1,124 +1,223 @@
 <app-sideNav></app-sideNav>
 
-<div class="container">
+<div class="ml-72 bg-red-950" *ngIf="getUserInfo() | async as user">
 
-    <div class="titleContainer">
-        <h3 class="title">Configuration</h3>
-        <p class="subtitle">Modifica los datos de tu cuenta</p>
+    <div class="flex">
+        <div class="titleContainer">
+            <h3 class="title text-2xl font-bold">Configuration</h3>
+            <div class="w-full h-0.5 bg-white bg-opacity-50"></div>
+            <p class="subtitle">Modifica los datos de tu cuenta</p>
+        </div>
+
+        <div class="m-16 ml-40 text-center" >
+            <h5 class="headerImage text-2xl">Header Image</h5>
+            <img class="text-center mx-auto py-3" >
+            <button class="headerButton border rounded-xl" type="button">ELIJE FOTO</button>
+        </div>
+
+
+        <div class="m-16 ml-40 text-center">
+            <h5 class="profileImage text-2xl">Profile Image</h5>
+            <img class="text-center mx-auto py-3" *ngIf="user.picture" [src]="user.picture" alt="User Avatar">
+            <button class="profileButton border rounded-xl" type="button">ELIJE FOTO</button>
+        </div>
+
     </div>
 
-    <div class="header">
-        <h5 class="headerImage">Header Image</h5>
-        
-        <button class="headerButton" type="button">ELIJE FOTO</button>
-    </div>
 
-    <div class="profile">
-        <h5 class="profileImage">Profile Image</h5>
-        <button class="profileButton" type="button">ELIJE FOTO</button>
-    </div>
-   
     <div class="editProfileInfo">
-        <h5>Editar informacion del perfil</h5>
+        <h5 class="font-bold text-xl">Editar informacion del perfil</h5>
 
         <br>
-        <h6>Username:</h6>
-        <input type="text" class="username" placeholder="username">
-        
+        <div class="border-black px-2 py-4 rounded-2xl bg-black bg-opacity-50">
+            <h6 class="mb-3.5">Username:</h6>
+            <input type="text" class="username" placeholder="username" [value]="user.given_name">
+        </div>
+
+
         <br><br>
-        <h6>Creator Type:</h6>
-        <input type="text" class="username" placeholder="username">
-        
+
+        <div class="border-black px-2 py-4 rounded-2xl bg-black bg-opacity-50">
+            <h6>Creator Type:</h6>
+            <input type="text" class="username" placeholder="Producer, Songwriter, Artist, DJ, Manager, A&R, Music Supervisor, Publisher, Other">
+        </div>
+
+
+
         <br><br>
-        <h6>About:</h6>
-        <input type="text" class="username" placeholder="username">
+
+        <div class="border-black px-2 py-4 rounded-2xl bg-black bg-opacity-50">
+            <h6>About:</h6>
+            <input type="text" class="username" placeholder="Descripcion breve sobre ti o tu entidad">
+        </div>
+
+
         <br><br>
 
         <h5>Informacion Personal</h5>
 
         <br>
 
-        <h6>Username:</h6>
-        <input type="text" class="username" placeholder="username">
+        <div class="border-black px-2 py-4 rounded-2xl bg-black bg-opacity-50">
+            <h6>Nickname:</h6>
+            <input type="text" class="username" placeholder="username" [value]="user.nickname">
+        </div>
+
+
         <br><br>
 
-        <h6>Email:</h6>
-        <input type="text" class="username" placeholder="username">
-        
+
+        <div class="border-black px-2 py-4 rounded-2xl bg-black bg-opacity-50">
+            <h6>Email:</h6>
+            <input type="text" class="username" placeholder="username" [value]="user.email">
+        </div>
+
+
+
         <br><br>
-        
-        <h6>Telefono:</h6>
-        <input type="text" class="username" placeholder="username">
-        
+
+
+        <div class="border-black px-2 py-4 rounded-2xl bg-black bg-opacity-50">
+            <h6>Telefono:</h6>
+            <input type="text" class="username" placeholder="username" [value]="user.phone_number">
+        </div>
+
+
         <br><br>
         <h5>Redes Sociales</h5>
-        
+
         <br>
-        
-        <h6>Instagram:</h6>
-        <input type="text" class="username" placeholder="username">
-        
+
+        <div class="border-black px-2 py-4 rounded-2xl bg-black bg-opacity-50">
+            <h6>Instagram:</h6>
+            <input type="text" class="username" placeholder="[Ingrese el link]">
+        </div>
+
+
+
         <br><br>
-        
-        <h6>Facebook:</h6>
-        <input type="text" class="username" placeholder="username">
-        
+
+        <div class="border-black px-2 py-4 rounded-2xl bg-black bg-opacity-50">
+            <h6>Facebook:</h6>
+            <input type="text" class="username" placeholder="[Ingrese el link]">
+
+        </div>
+
+
+
         <br><br>
-        
-        <h6>Twitter:</h6>
-        <input type="text" class="username" placeholder="username">
-        
+
+        <div class="border-black px-2 py-4 rounded-2xl bg-black bg-opacity-50">
+
+            <h6>Twitter:</h6>
+            <input type="text" class="username" placeholder="[Ingrese el link]">
+
+        </div>
+
+
+
         <br><br>
-        
-        <h6>Spotify:</h6>
-        <input type="text" class="username" placeholder="username">
-        
+
+        <div class="border-black px-2 py-4 rounded-2xl bg-black bg-opacity-50">
+
+            <h6>Spotify:</h6>
+            <input type="text" class="username" placeholder="[Ingrese el link]">
+        </div>
+
+
+
+
+
         <br><br>
-        
-        <h6>Apple Music:</h6>
-        <input type="text" class="username" placeholder="username">
-        
+
+        <div class="border-black px-2 py-4 rounded-2xl bg-black bg-opacity-50">
+            <h6>Apple Music:</h6>
+            <input type="text" class="username" placeholder="[Ingrese el link]">
+        </div>
+
+
+
+
+
         <br><br>
-        
-        <h6>SoundCloud:</h6>
-        <input type="text" class="username" placeholder="username">
-        
+
+        <div class="border-black px-2 py-4 rounded-2xl bg-black bg-opacity-50">
+            <h6>SoundCloud:</h6>
+            <input type="text" class="username" placeholder="[Ingrese el link]">
+        </div>
+
+
+
+
         <br><br>
-        
-        <h6>YouTube:</h6>
-        <input type="text" class="username" placeholder="username">
-        
+
+        <div class="border-black px-2 py-4 rounded-2xl bg-black bg-opacity-50">
+            <h6>YouTube:</h6>
+            <input type="text" class="username" placeholder="[Ingrese el link]">
+
+        </div>
+
+
+
+
         <br><br>
-        
-        <h6>TikTok:</h6>
-        <input type="text" class="username" placeholder="username">
-        
+
+        <div class="border-black px-2 py-4 rounded-2xl bg-black bg-opacity-50">
+            <h6>TikTok:</h6>
+            <input type="text" class="username" placeholder="[Ingrese el link]">
+
+        </div>
+
+
         <br><br>
-        
-        <h6>Twitch:</h6>
-        <input type="text" class="username" placeholder="username">
-        
+
+        <div class="border-black px-2 py-4 rounded-2xl bg-black bg-opacity-50">
+
+            <h6>Twitch:</h6>
+            <input type="text" class="username" placeholder="[Ingrese el link]">
+
+        </div>
+
+
         <br><br>
 
         <h5>Preferencias del vendedor</h5>
-        
+
         <br>
-        
-        <h6>Generos Favoritos:</h6>
-        <input type="text" class="username" placeholder="username">
-        
+
+        <div class="border-black px-2 py-4 rounded-2xl bg-black bg-opacity-50">
+
+            <h6>Generos Favoritos:</h6>
+            <input type="text" class="username" placeholder="Hip Hop, Pop, Pop Rap, Lofi, Rap, Reggaeton, Smooth R&B, Trap, RnB">
+
+        </div>
+
+
+
         <br><br>
-        
-        <h6>Vender interes musical:</h6>
-        <input type="text" class="username" placeholder="username">
-        
+
+        <div class="border-black px-2 py-4 rounded-2xl bg-black bg-opacity-50">
+
+            <h6>Vender interes musical:</h6>
+            <input type="text" class="username" placeholder="Si/No">
+
+        </div>
+
+
         <br><br>
-        
-        <h6>Situacion actual de editorial:</h6>
-        <input type="text" class="username" placeholder="username">
-        
+
+        <div class="border-black px-2 py-4 rounded-2xl bg-black bg-opacity-50">
+
+            <h6>Situacion actual de editorial:</h6>
+            <input type="text" class="username" placeholder="undefined">
+
+        </div>
+
+        <br><br>
+
+
+
     </div>
-    
+
 
 </div>
-
