@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Billie Eilish",
+    "genre": "Pop",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/BillieEilishO2160622_%2819_of_45%29_%2852153214339%29_%28cropped_3%29.jpg/250px-BillieEilishO2160622_%2819_of_45%29_%2852153214339%29_%28cropped_3%29.jpg",
+    "bio": "Ganadora de múltiples premios Grammy, conocida por su estilo único y letras introspectivas.",
+    "placement": "featured",
+    "isTrending": true,
+    "followers": 56000000,
+    "startDate": "2025-05-01T00:00:00Z",
+    "endDate": "2025-05-15T23:59:59Z",
+    "label": "Interscope Records"
+  },
+  {
+    "id": 2,
+    "name": "Kendrick Lamar",
+    "genre": "Hip-Hop",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Pulitzer2018-portraits-kendrick-lamar.jpg/250px-Pulitzer2018-portraits-kendrick-lamar.jpg",
+    "bio": "Uno de los raperos más influyentes de su generación, ganador del Pulitzer Prize.",
+    "placement": "trending",
+    "isTrending": true,
+    "followers": 39000000,
+    "startDate": "2025-05-05T00:00:00Z",
+    "endDate": "2025-06-05T23:59:59Z",
+    "label": "Top Dawg Entertainment"
+  },
+  {
+    "id": 3,
+    "name": "ROSALÍA",
+    "genre": "Flamenco/Pop Urbano",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2023-11-16_Gala_de_los_Latin_Grammy%2C_27_%28cropped%2902.jpg/250px-2023-11-16_Gala_de_los_Latin_Grammy%2C_27_%28cropped%2902.jpg",
+    "bio": "Artista española que ha revolucionado la música urbana con su fusión de flamenco y trap.",
+    "placement": "new_release",
+    "isTrending": false,
+    "followers": 23000000,
+    "startDate": "2025-04-28T00:00:00Z",
+    "endDate": "2025-05-12T23:59:59Z",
+    "label": "Columbia Records"
+  },
+  {
+    "id": 4,
+    "name": "Anuel AA",
+    "genre": "Reguetón",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Anuel_AA_in_2022_2.jpg/250px-Anuel_AA_in_2022_2.jpg",
+    "bio": "Rapero y cantante puertorriqueño, conocido por su estilo único dentro del reguetón y la música urbana.",
+    "placement": "classic",
+    "isTrending": false,
+    "followers": 25000000,
+    "startDate": "2025-04-01T00:00:00Z",
+    "endDate": "2025-07-01T23:59:59Z",
+    "label": "Real G Music"
+  },
+  {
+    "id": 5,
+    "name": "Doja Cat",
+    "genre": "Pop/Hip-Hop",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/DojaCatO2140624_%2887_of_105%29_%2853792876988%29_%28cropped%29.jpg/250px-DojaCatO2140624_%2887_of_105%29_%2853792876988%29_%28cropped%29.jpg",
+    "bio": "Conocida por sus hits virales y un estilo visual y sonoro muy particular.",
+    "placement": "trending",
+    "isTrending": true,
+    "followers": 27000000,
+    "startDate": "2025-05-01T00:00:00Z",
+    "endDate": "2025-05-31T23:59:59Z",
+    "label": "RCA Records"
+  }
+]
